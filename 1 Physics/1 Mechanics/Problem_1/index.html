@@ -172,22 +172,25 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-1">Problem 1</h1>
-<h1 id="newtons-laws-of-motion">Newton's Laws of Motion</h1>
-<h2 id="1-first-law-law-of-inertia">1. <strong>First Law (Law of Inertia)</strong></h2>
-<p>An object at rest will remain at rest, and an object in motion will remain in motion unless acted upon by a net external force.</p>
-<h3 id="mathematically">Mathematically:</h3>
-<div class="arithmatex">\[
-F_{\text{net}} = 0 \Rightarrow \text{constant velocity (zero acceleration)}
-\]</div>
-<p><strong>Example:</strong> A ball on a flat surface will remain stationary unless a force is applied to it (like a push).</p>
-<hr/>
-<h2 id="2-second-law-law-of-acceleration">2. <strong>Second Law (Law of Acceleration)</strong></h2>
-<p>The acceleration of an object is directly proportional to the net force acting on the object and inversely proportional to its mass.</p>
-<h3 id="mathematically_1">Mathematically:</h3>
-<p>[
-F = m \cdot a
-]
-Where</p>
+<h1 id="ntvyvubi">Ntvyvubi</h1>
+<p>plt.plot(angles_deg, ranges, marker='o', linestyle='-', color='blue')
+plt.title('Projectile Range vs. Launch Angle (Elevated Launch)')
+plt.xlabel('Launch Angle (degrees)')
+plt.ylabel('Range (meters)')
+plt.grid(True)
+plt.show()</p>
+<h1 id="full-angle-range-visualization">Full angle range visualization</h1>
+<p>theta_vals = np.linspace(0.1, 89.9, 500)  # Avoid 0 and 90 to prevent undefined behavior
+theta_rad = np.radians(theta_vals)
+range_vals = [range_function(theta) for theta in theta_rad]</p>
+<p>plt.figure(figsize=(10, 6))
+plt.plot(theta_vals, range_vals, color='green')
+plt.title('Full Range vs Angle of Projection')
+plt.xlabel('Angle (degrees)')
+plt.ylabel('Range (meters)')
+plt.grid(True)
+plt.show()
+<img alt="alt text" src="../image.png"/></p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
